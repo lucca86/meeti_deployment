@@ -1,0 +1,47 @@
+{
+  "name": "meeti",
+  "version": "1.0.0",
+  "description": "Proyecto Meeti con Node, PosgreSQL y EJS",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev\"  \"npm run watch\" ",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "watch": "webpack --w --mode development"
+  },
+  "author": "Lucca Lens",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^4.1.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.2",
+    "express-validator": "^5.3.1",
+    "leaflet-geosearch": "^2.7.0",
+    "moment": "^2.24.0",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.2.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.11.0",
+    "sequelize": "^5.8.12",
+    "shortid": "^2.2.14",
+    "slug": "^1.1.0",
+    "sweetalert2": "^8.14.0",
+    "uuid": "^3.3.2"
+  }
+}
